@@ -1,0 +1,10 @@
+# @see https://git-scm.com/docs/gitattributes
+# @see https://help.github.com/articles/dealing-with-line-endings
+
+* text=auto
+
+*.eot binary
+*.svg binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
