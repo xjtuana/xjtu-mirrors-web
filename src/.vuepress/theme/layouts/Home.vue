@@ -7,11 +7,11 @@
     <div class="col-md-4 mt-4 mt-md-0">
       <ListNews :limit="5"/>
 
-      <hr/>
+      <hr>
 
       <ListDownloads/>
 
-      <hr/>
+      <hr>
 
       <ListLinks/>
     </div>

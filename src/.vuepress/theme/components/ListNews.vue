@@ -40,7 +40,7 @@
         <span>选择新闻通知</span>
       </button>
 
-      <div 
+      <div
         v-show="showMenu"
         class="dropdown-menu show">
         <router-link
