@@ -10,11 +10,13 @@
 
     <TransitionFadeSlide direction="x">
       <ul>
-        <li v-for="download in list">
+        <li
+          v-for="download in list"
+          :key="download.name">
           <a
             :href="download.link"
             target="_blank">{{ download.name }}</a>
-          </li>
+        </li>
       </ul>
     </TransitionFadeSlide>
   </section>
@@ -37,30 +39,30 @@ export default {
       list: [
         {
           name: 'ArchLinux',
-          link: '//mirrors.xjtu.edu.cn/archlinux/iso/latest/'
+          link: '//mirrors.xjtu.edu.cn/archlinux/iso/latest/',
         },
         {
           name: 'CentOS',
-          link: '//mirrors.xjtu.edu.cn/centos/7/isos/x86_64/'
+          link: '//mirrors.xjtu.edu.cn/centos/7/isos/x86_64/',
         },
         {
           name: 'Debian',
-          link: '//mirrors.xjtu.edu.cn/debian-cd/current/amd64/iso-cd/'
+          link: '//mirrors.xjtu.edu.cn/debian-cd/current/amd64/iso-cd/',
         },
         {
           name: 'Fedora',
-          link: '//mirrors.xjtu.edu.cn/fedora/releases/28/Workstation/x86_64/iso/'
+          link: '//mirrors.xjtu.edu.cn/fedora/releases/28/Workstation/x86_64/iso/',
         },
         {
           name: 'Linux Kernel',
-          link: '//mirrors.xjtu.edu.cn/kernel/'
+          link: '//mirrors.xjtu.edu.cn/kernel/',
         },
         {
           name: 'Ubuntu',
-          link: '//mirrors.xjtu.edu.cn/ubuntu-releases/'
+          link: '//mirrors.xjtu.edu.cn/ubuntu-releases/',
         },
       ],
     }
-  }
+  },
 }
 </script>

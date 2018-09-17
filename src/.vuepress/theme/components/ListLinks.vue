@@ -10,11 +10,13 @@
 
     <TransitionFadeSlide direction="x">
       <ul>
-        <li v-for="link in list">
+        <li
+          v-for="link in list"
+          :key="link.name">
           <a
             :href="link.link"
             target="_blank">{{ link.name }}</a>
-          </li>
+        </li>
       </ul>
     </TransitionFadeSlide>
   </section>
@@ -37,18 +39,18 @@ export default {
       list: [
         {
           name: '西安交通大学网络信息中心',
-          link: 'http://nic.xjtu.edu.cn'
+          link: 'http://nic.xjtu.edu.cn',
         },
         {
           name: '西安交通大学学生网络管理协会',
-          link: 'https://ana.xjtu.edu.cn'
+          link: 'https://ana.xjtu.edu.cn',
         },
         {
           name: '西安交通大学团委挑战网',
-          link: 'https://www.tiaozhan.com'
+          link: 'https://www.tiaozhan.com',
         },
       ],
     }
-  }
+  },
 }
 </script>
