@@ -11,7 +11,7 @@
 
       <div class="text-right col-sm-6">
         <input
-          v-show="!isLoading"
+          v-show="!isLoading && !isFailed"
           v-model="condition"
           type="text"
           class="form-control"
@@ -25,6 +25,10 @@
         :appear="false">
         <p v-if="isLoading">
           正在获取镜像列表……
+        </p>
+
+        <p v-else-if="isFailed">
+          获取镜像列表失败
         </p>
 
         <p v-else-if="filteredMirrors.length === 0">
