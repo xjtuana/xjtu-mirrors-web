@@ -69,7 +69,7 @@ export default {
         : this.mirror.status === 'syncing'
           ? { type: 'spinner', spin: true }
           : this.mirror.status === 'failed'
-            ? { icon: 'exclamation-triangle', spin: false }
+            ? { type: 'exclamation-triangle', spin: false }
             : null
     },
 
