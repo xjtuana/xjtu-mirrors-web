@@ -16,6 +16,7 @@ import About from '@theme/layouts/About'
 import Home from '@theme/layouts/Home'
 import Help from '@theme/layouts/Help'
 import News from '@theme/layouts/News'
+import NewsIndex from '@theme/layouts/NewsIndex'
 
 export default {
   name: 'TheMain',
@@ -25,6 +26,7 @@ export default {
     Help,
     Home,
     News,
+    NewsIndex,
     TransitionFadeSlide,
   },
 

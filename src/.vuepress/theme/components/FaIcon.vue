@@ -18,10 +18,14 @@ import {
   faLink,
   faSpinner,
 } from '@fortawesome/free-solid-svg-icons'
+import {
+  faCalendarAlt,
+} from '@fortawesome/free-regular-svg-icons'
 
 const typeIconMap = {
   'book': faBook,
   'bullhorn': faBullhorn,
+  'calendar-alt': faCalendarAlt,
   'check': faCheck,
   'coffee': faCoffee,
   'download': faDownload,

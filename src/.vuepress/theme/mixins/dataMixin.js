@@ -37,7 +37,7 @@ export const dataMixin = {
         return p
       }
 
-      const news = pages.filter(pageFilter).map(pageMap)
+      const news = pages.filter(pageFilter).map(pageMap).reverse()
       return news
     },
   },
