@@ -107,7 +107,9 @@ export default {
 
     filteredMirrors () {
       if (this.mirrors === null) return null
-      let filteredMirrors = this.mirrors.filter(item => item.name.toLowerCase().includes(this.condition.toLowerCase()))
+
+      let filteredMirrors = this.mirrors.filter(item => item.name.toLowerCase().includes(this.condition.toLowerCase()) && item.status !== 'disabled')
+
       return filteredMirrors
     },
   },
