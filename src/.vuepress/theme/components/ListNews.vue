@@ -3,7 +3,7 @@
     <div :class="responsiveClass">
       <div class="mb-3">
         <span class="h4">
-          <FaIcon type="bullhorn"/>
+          <FaIcon type="bullhorn" />
 
           <span>新闻通知 <sup><small>News</small></sup></span>
         </span>
@@ -15,14 +15,17 @@
             v-for="news in displayNews"
             :key="news.title"
             class="list-item px-1"
-            :class="{ 'active': $page === news }">
-            <router-link :to="news.path">
+            :class="{ 'active': $page === news }"
+          >
+            <RouterLink :to="news.path">
               {{ news.title }}
-            </router-link>
+            </RouterLink>
 
             <br>
 
-            <sup class="text-muted">{{ news.createdAt }}</sup>
+            <sup class="text-muted">
+              {{ news.createdAt }}
+            </sup>
           </li>
         </ul>
       </TransitionFadeSlide>
@@ -30,27 +33,33 @@
 
     <div
       v-if="responsive"
-      class="dropdown d-block d-md-none">
+      class="dropdown d-block d-md-none"
+    >
       <button
         class="btn btn-light dropdown-toggle text-left"
         type="button"
-        @click="showMenu = !showMenu">
-        <FaIcon type="bullhorn"/>
+        @click="showMenu = !showMenu"
+      >
+        <FaIcon type="bullhorn" />
 
         <span>选择新闻通知</span>
       </button>
 
       <div
         v-show="showMenu"
-        class="dropdown-menu show">
-        <router-link
+        class="dropdown-menu show"
+      >
+        <RouterLink
           v-for="news in displayNews"
           :key="news.title"
           :to="news.path"
           class="dropdown-item"
-          :class="{ 'active': $page === news }">
-          <span class="date">{{ news.createdAt }}</span> - {{ news.title }}
-        </router-link>
+          :class="{ 'active': $page === news }"
+        >
+          <span class="date">
+            {{ news.createdAt }}
+          </span> - {{ news.title }}
+        </RouterLink>
       </div>
     </div>
   </section>

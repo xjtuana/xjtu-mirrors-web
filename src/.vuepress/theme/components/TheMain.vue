@@ -1,11 +1,13 @@
 <template>
   <main
     class="container animated fadeIn pt-3 pb-4"
-    style="animation-delay: .8s;">
+    style="animation-delay: .8s;"
+  >
     <TransitionFadeSlide>
-      <component
+      <Component
         :is="layout"
-        :key="$page.path.replace(/^(\/.*)\/.*$/, '$1')"/>
+        :key="$page.path.replace(/^(\/.*)\/.*$/, '$1')"
+      />
     </TransitionFadeSlide>
   </main>
 </template>

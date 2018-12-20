@@ -4,7 +4,8 @@
       <span class="h4 col-sm-6">
         <FaIcon
           class="mr-2"
-          type="coffee"/>
+          type="coffee"
+        />
 
         <span>镜像列表 <sup><small>Mirrors</small></sup></span>
       </span>
@@ -15,14 +16,16 @@
           v-model="condition"
           type="text"
           class="form-control"
-          placeholder="Filter Mirrors">
+          placeholder="Filter Mirrors"
+        >
       </div>
     </div>
 
     <div>
       <TransitionFadeSlide
         direction="x"
-        :appear="false">
+        :appear="false"
+      >
         <p v-if="isLoading">
           正在获取镜像列表……
         </p>
@@ -37,12 +40,15 @@
 
         <table
           v-else
-          class="table table-hover table-sm m-0">
+          class="table table-hover table-sm m-0"
+        >
           <thead>
             <tr>
               <th>名称</th>
 
-              <th class="d-none d-md-table-cell">最近同步时间</th>
+              <th class="d-none d-md-table-cell">
+                最近同步时间
+              </th>
 
               <th>说明</th>
             </tr>
@@ -51,12 +57,14 @@
           <TransitionFadeSlide
             direction="x"
             :group="true"
-            tag="tbody">
+            tag="tbody"
+          >
             <ListMirrorsItem
               v-for="mirror in filteredMirrors"
               :key="mirror.name"
               :mirror="mirror"
-              :help="$helps.find(obj => obj.name === mirror.name) || null"/>
+              :help="$helps.find(obj => obj.name === mirror.name) || null"
+            />
           </TransitionFadeSlide>
         </table>
       </TransitionFadeSlide>

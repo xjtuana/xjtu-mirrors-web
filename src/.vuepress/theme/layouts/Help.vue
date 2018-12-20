@@ -1,12 +1,12 @@
 <template>
   <div class="row">
     <div class="col-md-4 col-lg-3 mb-3 mb-md-0">
-      <ListHelps/>
+      <ListHelps />
     </div>
 
     <div class="col-md-8 col-lg-9">
       <TransitionFadeSlide>
-        <Content class="markdown-body"/>
+        <Content class="markdown-body" />
       </TransitionFadeSlide>
     </div>
   </div>

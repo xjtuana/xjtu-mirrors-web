@@ -1,5 +1,5 @@
 <template>
-  <Content class="markdown-body"/>
+  <Content class="markdown-body" />
 </template>
 
 <script>

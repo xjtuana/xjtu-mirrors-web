@@ -1,8 +1,8 @@
 <template>
   <header class="bg-primary text-white">
-    <TheHeaderNavbar/>
+    <TheHeaderNavbar />
 
-    <TheHeaderJumbotron/>
+    <TheHeaderJumbotron />
   </header>
 </template>
 

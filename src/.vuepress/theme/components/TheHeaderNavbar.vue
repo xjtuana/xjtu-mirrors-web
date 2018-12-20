@@ -1,33 +1,41 @@
 <template>
   <nav class="navbar navbar-expand-sm navbar-dark bg-transparent">
     <div class="container">
-      <router-link
+      <RouterLink
         to="/"
-        class="navbar-brand d-inline d-sm-none">
-        <span class="animated fadeIn">XJTU Mirrors</span>
-      </router-link>
+        class="navbar-brand d-inline d-sm-none"
+      >
+        <span class="animated fadeIn">
+          XJTU Mirrors
+        </span>
+      </RouterLink>
 
       <button
         class="navbar-toggler"
         type="button"
-        @click="toggleNavbarLinks">
-        <span class="navbar-toggler-icon"/>
+        @click="toggleNavbarLinks"
+      >
+        <span class="navbar-toggler-icon" />
       </button>
 
       <div
         class="navbar-collapse"
-        :class="navbarClass">
+        :class="navbarClass"
+      >
         <ul class="navbar-nav ml-auto text-center">
-          <router-link
+          <RouterLink
             v-for="(nav, i) of $site.themeConfig.nav"
             :key="nav.text"
             :to="nav.link"
             :exact="nav.exact"
             tag="li"
             class="nav-item animated fadeInLeft"
-            :style="{ 'animation-delay': `${0.2 * i}s` }">
-            <a class="nav-link">{{ nav.text }}</a>
-          </router-link>
+            :style="{ 'animation-delay': `${0.2 * i}s` }"
+          >
+            <a class="nav-link">
+              {{ nav.text }}
+            </a>
+          </RouterLink>
         </ul>
       </div>
     </div>

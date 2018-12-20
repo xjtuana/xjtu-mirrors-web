@@ -3,7 +3,8 @@
     :icon="icon"
     :size="size"
     :spin="spin"
-    :fixed-width="fixedWidth"/>
+    :fixed-width="fixedWidth"
+  />
 </template>
 
 <script>

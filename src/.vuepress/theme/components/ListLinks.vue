@@ -12,10 +12,14 @@
       <ul>
         <li
           v-for="link in list"
-          :key="link.name">
+          :key="link.name"
+        >
           <a
             :href="link.link"
-            target="_blank">{{ link.name }}</a>
+            target="_blank"
+          >
+            {{ link.name }}
+          </a>
         </li>
       </ul>
     </TransitionFadeSlide>

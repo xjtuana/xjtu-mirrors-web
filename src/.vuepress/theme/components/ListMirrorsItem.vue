@@ -1,11 +1,13 @@
 <template>
   <tr
     :class="trClass"
-    :title="`镜像名称：${mirror.name}\n最近同步时间：${updatedAt}\n同步状态：${mirror.status}`">
+    :title="`镜像名称：${mirror.name}\n最近同步时间：${updatedAt}\n同步状态：${mirror.status}`"
+  >
     <td>
       <a
         :href="`//mirrors.xjtu.edu.cn/${mirror.name}/`"
-        target="_blank">
+        target="_blank"
+      >
         {{ mirror.name }}
       </a>
     </td>
@@ -18,16 +20,19 @@
       <FaIcon
         :type="statusIcon.type"
         :spin="statusIcon.spin"
-        fixed-width/>
+        fixed-width
+      />
 
-      <router-link
+      <RouterLink
         v-if="help"
         :to="help.path"
-        title="点击查看帮助">
+        title="点击查看帮助"
+      >
         <FaIcon
           type="book"
-          fixed-width/>
-      </router-link>
+          fixed-width
+        />
+      </RouterLink>
     </td>
   </tr>
 </template>

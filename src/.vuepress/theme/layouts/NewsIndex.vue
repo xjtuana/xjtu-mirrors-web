@@ -1,31 +1,34 @@
 <template>
   <div class="row">
     <div class="col-md-4 col-lg-3 mb-3 mb-md-0">
-      <ListNews :responsive="true"/>
+      <ListNews :responsive="true" />
     </div>
 
     <div class="col-md-8 col-lg-9">
       <div
         class="news-item"
         v-for="news in $news"
-        :key="news.path">
+        :key="news.path"
+      >
         <div
           class="markdown-body"
-          v-html="news.excerpt"/>
+          v-html="news.excerpt"
+        />
 
         <p>......</p>
 
         <p>
           <span class="news-item-date">
-            <FaIcon type="calendar-alt"/>
+            <FaIcon type="calendar-alt" />
             {{ news.createdAt }}
           </span>
 
-          <router-link
+          <RouterLink
             class="news-item-read-more"
-            :to="news.path">
+            :to="news.path"
+          >
             Read more
-          </router-link>
+          </RouterLink>
         </p>
 
         <hr class="line mb-5">
@@ -37,7 +40,6 @@
 <script>
 import FaIcon from '@theme/components/FaIcon'
 import ListNews from '@theme/components/ListNews'
-import TransitionFadeSlide from '@theme/components/transitions/TransitionFadeSlide'
 
 export default {
   name: 'NewsIndex',
@@ -45,7 +47,6 @@ export default {
   components: {
     FaIcon,
     ListNews,
-    TransitionFadeSlide,
   },
 }
 </script>

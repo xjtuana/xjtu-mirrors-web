@@ -2,15 +2,18 @@
   <div class="XjtuMirrorsLogo">
     <div
       class="Triangle Triangle--one animated zoomIn"
-      style="animation-delay: 1s;"/>
+      style="animation-delay: 1s;"
+    />
 
     <div
       class="Triangle Triangle--two animated zoomIn"
-      style="animation-delay: 1s;"/>
+      style="animation-delay: 1s;"
+    />
 
     <div
       class="Triangle Triangle--three animated zoomIn"
-      style="animation-delay: 1s;"/>
+      style="animation-delay: 1s;"
+    />
   </div>
 </template>
 

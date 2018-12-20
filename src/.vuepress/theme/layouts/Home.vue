@@ -1,19 +1,19 @@
 <template>
   <div class="row">
     <div class="col-md-8">
-      <ListMirrors/>
+      <ListMirrors />
     </div>
 
     <div class="col-md-4 mt-4 mt-md-0">
-      <ListNews :limit="5"/>
+      <ListNews :limit="5" />
 
       <hr>
 
-      <ListDownloads/>
+      <ListDownloads />
 
       <hr>
 
-      <ListLinks/>
+      <ListLinks />
     </div>
   </div>
 </template>

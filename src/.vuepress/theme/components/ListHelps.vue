@@ -3,7 +3,7 @@
     <div class="d-none d-md-block">
       <div class="mb-3">
         <span class="h4">
-          <FaIcon type="book"/>
+          <FaIcon type="book" />
 
           <span>帮助文档 <sup><small>Helps</small></sup></span>
         </span>
@@ -15,10 +15,11 @@
             v-for="help in $helps"
             :key="help.name"
             class="list-item px-1"
-            :class="{ 'active': $page === help }">
-            <router-link :to="help.path">
+            :class="{ 'active': $page === help }"
+          >
+            <RouterLink :to="help.path">
               {{ help.name }}
-            </router-link>
+            </RouterLink>
           </li>
         </ul>
       </div>
@@ -28,23 +29,26 @@
       <button
         class="btn btn-light dropdown-toggle text-left"
         type="button"
-        @click="showMenu = !showMenu">
-        <FaIcon type="book"/>
+        @click="showMenu = !showMenu"
+      >
+        <FaIcon type="book" />
 
         <span>选择帮助文档</span>
       </button>
 
       <div
         v-show="showMenu"
-        class="dropdown-menu show">
-        <router-link
+        class="dropdown-menu show"
+      >
+        <RouterLink
           v-for="help in $helps"
           :key="help.name"
           :to="help.path"
           class="dropdown-item"
-          :class="{ 'active': $page === help }">
+          :class="{ 'active': $page === help }"
+        >
           {{ help.name }}
-        </router-link>
+        </RouterLink>
       </div>
     </div>
   </section>

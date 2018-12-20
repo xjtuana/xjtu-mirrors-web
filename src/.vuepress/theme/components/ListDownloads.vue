@@ -12,10 +12,14 @@
       <ul>
         <li
           v-for="download in list"
-          :key="download.name">
+          :key="download.name"
+        >
           <a
             :href="download.link"
-            target="_blank">{{ download.name }}</a>
+            target="_blank"
+          >
+            {{ download.name }}
+          </a>
         </li>
       </ul>
     </TransitionFadeSlide>

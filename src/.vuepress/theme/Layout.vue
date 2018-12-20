@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <TheHeader/>
+    <TheHeader />
 
-    <TheMain :layout="layout"/>
+    <TheMain :layout="layout" />
 
-    <TheFooter/>
+    <TheFooter />
   </div>
 </template>
 
@@ -32,7 +32,7 @@ export default {
 }
 </script>
 
-<style src="./assets/sass/bootstrap.scss"></style>
-<style src="./assets/sass/fonts.scss"></style>
+<style src="./assets/sass/bootstrap.scss" lang="scss"></style>
+<style src="./assets/sass/fonts.scss" lang="scss"></style>
 <style src="github-markdown-css/github-markdown.css"></style>
 <style src="animate.css/animate.css"></style>

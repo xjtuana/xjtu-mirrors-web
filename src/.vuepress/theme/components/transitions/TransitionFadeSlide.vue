@@ -1,12 +1,13 @@
 <template>
-  <component
+  <Component
     :is="component"
     :name="name"
     :mode="mode"
     :appear="appear"
-    :tag="tag">
-    <slot/>
-  </component>
+    :tag="tag"
+  >
+    <slot />
+  </Component>
 </template>
 
 <script>

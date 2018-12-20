@@ -6,14 +6,20 @@
       </h1>
 
       <h2 class="subtitle">
-        <span class="d-none d-sm-block">西安交通大学软件镜像站</span>
+        <span class="d-none d-sm-block">
+          西安交通大学软件镜像站
+        </span>
 
-        <span class="d-block d-sm-none">西交镜像</span>
+        <span class="d-block d-sm-none">
+          西交镜像
+        </span>
       </h2>
 
-      <p class="lead desc mt-3">Welcome to XJTU software mirror site</p>
+      <p class="lead desc mt-3">
+        Welcome to XJTU software mirror site
+      </p>
 
-      <TheHeaderAnimation class="logo d-none d-md-block"/>
+      <TheHeaderAnimation class="logo d-none d-md-block" />
     </div>
   </div>
 </template>
