@@ -55,7 +55,7 @@ export default {
         },
         {
           name: '校内专用',
-          link: 'https://mirrors.xjtu.edu.cn/commercial',
+          link: 'https://mirrors.xjtu.edu.cn/commercial/',
         },
       ],
     }
