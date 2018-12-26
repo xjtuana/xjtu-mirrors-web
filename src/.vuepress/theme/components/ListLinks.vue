@@ -53,10 +53,6 @@ export default {
           name: '西安交通大学团委挑战网',
           link: 'https://www.tiaozhan.com',
         },
-        {
-          name: '校内专用',
-          link: 'https://mirrors.xjtu.edu.cn/commercial/',
-        },
       ],
     }
   },

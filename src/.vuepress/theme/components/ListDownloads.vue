@@ -65,6 +65,10 @@ export default {
           name: 'Ubuntu',
           link: '//mirrors.xjtu.edu.cn/ubuntu-releases/',
         },
+        {
+          name: '校内专享',
+          link: '//mirrors.xjtu.edu.cn/commercial/',
+        },
       ],
     }
   },
