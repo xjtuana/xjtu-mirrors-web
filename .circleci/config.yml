@@ -29,7 +29,7 @@ jobs:
       - install
       - run:
           name: Build Docs
-          command: yarn build-docs
+          command: yarn build
       - run:
           name: Publish Github Pages
           command: |
