@@ -8,13 +8,13 @@ layout: help
 
 ### 1. 单次命令使用
 
-```sh
+```bash
 pip install [package-name] -i https://mirrors.xjtu.edu.cn/pypi/simple
 ```
 
 若报错，可添加`--trusted-host`参数
 
-```sh
+```bash
 pip install [package-name] -i https://mirrors.xjtu.edu.cn/pypi/simple --trusted-host mirrors.xjtu.edu.cn
 ```
 
@@ -34,7 +34,7 @@ trusted-host = mirrors.xjtu.edu.cn
 
 #### 方法二：通过命令修改配置
 
-```sh
+```bash
 pip config set global.index-url https://mirrors.xjtu.edu.cn/pypi/simple
 pip config set install.trusted-host mirrors.xjtu.edu.cn
 ```
