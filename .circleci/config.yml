@@ -46,7 +46,7 @@ workflows:
   version: 2
   github_pages:
     jobs:
-      - build_docs_and_publish:
+      - build_and_publish:
           filters:
             branches:
               only: master
